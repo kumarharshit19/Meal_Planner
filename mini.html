@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weekly Meal Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Weekly Meal Planner</h1>
+            <p>Fill in your favorite dishes below to generate a beautiful meal schedule.</p>
+        </header>
+
+        <section class="input-section">
+            <h2>Enter 3 Options for Each Meal</h2>
+            <form id="mealForm">
+                <div class="meal-group">
+                    <fieldset>
+                        <legend>Breakfast</legend>
+                        <input type="text" id="breakfast1" placeholder="Breakfast 1" required>
+                        <input type="text" id="breakfast2" placeholder="Breakfast 2" required>
+                        <input type="text" id="breakfast3" placeholder="Breakfast 3" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Lunch</legend>
+                        <input type="text" id="lunch1" placeholder="Lunch 1" required>
+                        <input type="text" id="lunch2" placeholder="Lunch 2" required>
+                        <input type="text" id="lunch3" placeholder="Lunch 3" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Dinner</legend>
+                        <input type="text" id="dinner1" placeholder="Dinner 1" required>
+                        <input type="text" id="dinner2" placeholder="Dinner 2" required>
+                        <input type="text" id="dinner3" placeholder="Dinner 3" required>
+                    </fieldset>
+                </div>
+                <button type="submit" class="submit-btn">Generate Meal Plan</button>
+            </form>
+        </section>
+
+        <section class="timetable-section">
+            <h2>Your Weekly Meal Schedule</h2>
+            <table id="mealTable">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Breakfast</th>
+                        <th>Lunch</th>
+                        <th>Dinner</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </div>
+
+    <script src="mini.js"></script>
+</body>
+</html>
